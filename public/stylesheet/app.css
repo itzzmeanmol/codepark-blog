@@ -1,0 +1,139 @@
+.icon{
+    font-size: 2em;
+}
+.container.main{
+    margin-top: 3%;
+}
+#delete{
+    display: inline;
+}
+
+#color{
+    color: #f2f4f7;
+}
+#text{
+    text-align: justify; 
+}
+
+.ui.segment.attached{
+        border-radius: 7px;
+box-shadow: 0 0 20px #bbbbbb;
+}
+
+.ui.items>.item>.image:not(.ui){
+    width: 230px;
+}
+
+.top-margin-blog{
+    margin-top: 6rem;
+}
+.top-margin-blog-main{
+     margin-top: 1.5em;   
+}
+.banner{
+    margin-top:4%;
+    height: 35%;
+    background-color:#39c4a1;
+}
+
+.ui.text.container{
+   width: inherit; 
+}
+.navbar-nav{
+    padding-bottom: 5px;
+}
+
+.nav-item{
+    display: inline;
+}
+
+.btn-success{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none !important;
+}
+
+.btn-success:focus{
+    outline: none !important;
+}
+
+.sidebar{
+    margin-top: 2.4%;
+}
+
+.slider{
+    overflow: hidden;
+    height: 400px;
+}
+
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+
+.slider figure img{
+    width: 100%;
+    float: left;
+} 
+
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0;
+    animation: 20s rahul infinite;
+}
+
+@keyframes rahul{
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -100%;
+    }
+    22%{
+        left: -100%;
+    }
+    24%{
+        left: -200%;
+    }
+    34%{
+        left: -200%;
+    }
+    36%{
+        left: -300%;
+    }
+    46%{
+        left: -300%;
+    }
+    48%{
+        left: -400%;
+    }
+    58%{
+        left: -400%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    72%{
+        left: -200%;
+    }
+    82%{
+        left: -200%;
+    }
+    84%{
+        left: -100%;
+    }
+    94%{
+        left: -100%;
+    }
+    96%{
+        left: 0%;
+    }
+}
+

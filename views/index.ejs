@@ -1,0 +1,104 @@
+<% include ./partials/header %>
+
+    <!--<section class="banner">
+        <div class="banner-content">
+            
+        </div>
+    </section>-->
+
+
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <img src="https://veeloinc.com/wp-content/uploads/2016/08/sales-tech-stack-long.png">    
+            </div>
+            <div class="slide">
+                <img src="https://www.theplanner.co.uk/sites/default/files/TECH-LANDSCAPE_digital-city_iStock.jpg">    
+            </div>
+            <div class="slide">
+                <img src="https://techcorps.in/wp-content/uploads/2018/01/Smart-City_144479163.jpeg">    
+            </div>
+            <div class="slide">
+                <img src="https://gcn.com/articles/2016/06/22/~/media/GIG/GCN/Redesign/Articles/2016/June/converged.png">    
+            </div>
+            <div class="slide">
+                <img src="https://www.b2bnn.com/wp-content/uploads/2017/03/unified-communications.jpg">    
+            </div>
+        </figure>
+    </div>
+
+<div class=row>
+<div class="top-margin-blog-main col-lg-3 col-md-3 col-sm-12 sidebar" >
+    <div class="ui main text container">
+        <div class="ui top segment attached" style="box-shadow:none; background-color:#EEEEEE;">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <a href="https://www.townscript.com/e/accelerate-your-career-with-vmware-training-by-mindmajix-412421?prS=listing&seS=topicpage">
+                    <li>Accelerate your Career with VMware Training by Mindmajix</li>
+                </a>
+                <a href="https://www.townscript.com/e/blockchain-training-in-bangalore-242234?prS=listing&seS=topicpage">
+                    <li>Block-chain Training in Bangalore</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 top-margin-blog-main">
+<% blogs.forEach(function(blog){ %>
+<div class="ui main text container">
+    <div class="ui top segment attached">
+        <div class="ui items divided"> 
+                <div class="item">
+                    <div class="image">
+                        <img src="<%= blog.image%>">
+                    </div>
+                    <div class="content">
+                        <a class="header" href="/blogs/<%=blog._id%>"><%= blog.title%></a>
+                        <div class="meta">
+                            <span><%=blog.created.toDateString()%></span>
+                        </div>
+                        <div class="description">
+                            <p><%- blog.body.substring(0,250)%>...</p>  
+                        </div>
+                        <div class="extra">
+                            <a class="read-more" href="/blogs/<%=blog._id%>">
+                                Read More
+                                
+                            </a>
+                            <span style="float:right;">- Anmol</span>
+                        </div>
+                        <div style="float:right;"> 
+                                <i style="cursor: pointer;" class="far fa-thumbs-up"></i>
+                                <i style="cursor: pointer;" class="far fa-thumbs-down"></i>
+                            </div>
+                    </div>
+
+                </div>
+
+            
+        </div>
+    </div>
+</div>
+<% });%>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-12 top-margin-blog-main sidebar"  >
+    <div class="ui main text container"  >
+        <div class="ui top segment attached" style="box-shadow:none; background-color:#EEEEEE;">
+            <h2>Trending Topics</h2>
+            <ul>
+                <a href="#"><li style="list-style:none;">Deep Learning</li></a>
+                <a href="#"><li style="list-style:none;">Blockchain</li></a>
+                <a href="#"><li style="list-style:none;">Industrail IOT</li></a>
+                <a href="#"><li style="list-style:none;">Robotics</li></a>
+                <a href="#"><li style="list-style:none;">Machine Learning</li></a>
+                <a href="#"><li style="list-style:none;">Cyber Security</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div style="height: 6%"></div>
+
+<% include ./partials/footer %>
